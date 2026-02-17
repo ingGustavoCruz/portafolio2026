@@ -1,0 +1,37 @@
+# ================================================================
+# api/.htaccess — Protección de la carpeta /api/
+# Portfolio — Ing. Gustavo Cruz
+# ================================================================
+# Bloquea el acceso directo desde el navegador a TODOS los archivos
+# de esta carpeta, excepto contacto.php (que tiene su propia
+# validación interna de AJAX y método POST).
+# ================================================================
+
+# ── Denegar todo por defecto ─────────────────────────────────────
+Order Deny,Allow
+Deny from all
+
+# ── Permitir SOLO contacto.php ───────────────────────────────────
+<Files "contacto.php">
+  Order Allow,Deny
+  Allow from all
+</Files>
+
+# ── Bloqueos explícitos adicionales ──────────────────────────────
+<FilesMatch "^(db\.php|db\.example\.php|database\.sql)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# ── Deshabilitar listado de directorio ───────────────────────────
+Options -Indexes
+
+# ── Deshabilitar ejecución de scripts en subdirectorios ──────────
+Options -ExecCGI
+
+# ── Cabeceras de seguridad extra para respuestas de la API ───────
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options        "DENY"
+  Header always set Cache-Control          "no-store, no-cache, must-revalidate"
+</IfModule>
