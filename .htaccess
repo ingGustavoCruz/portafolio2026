@@ -1,0 +1,93 @@
+# ================================================================
+# .htaccess — Portfolio Ing. Gustavo Cruz
+# Servidor: Apache (cPanel / Hosting compartido)
+# ================================================================
+
+# ── Opciones generales ──────────────────────────────────────────
+Options -Indexes
+ServerSignature Off
+
+# ── Bloquear acceso directo a /api/ desde navegador ─────────────
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  # Redirigir HTTP → HTTPS (descomenta cuando tengas SSL)
+  # RewriteCond %{HTTPS} off
+  # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+  # Evitar acceso directo a archivos PHP del api excepto AJAX
+  RewriteCond %{REQUEST_URI} ^/api/
+  RewriteCond %{HTTP:X-Requested-With} !XMLHttpRequest
+  RewriteRule ^api/contacto\.php$ - [F,L]
+
+  # Bloquear acceso directo a db.php y database.sql
+  RewriteRule ^api/db\.php$       - [F,L]
+  RewriteRule ^api/database\.sql$ - [F,L]
+</IfModule>
+
+# ── Proteger archivos sensibles ─────────────────────────────────
+<FilesMatch "^(\.htaccess|\.env|composer\.json|composer\.lock|package\.json)$">
+  Order Allow,Deny
+  Deny from all
+</FilesMatch>
+
+# ── Cabeceras de seguridad HTTP ─────────────────────────────────
+<IfModule mod_headers.c>
+  Header always set X-Content-Type-Options    "nosniff"
+  Header always set X-Frame-Options           "SAMEORIGIN"
+  Header always set X-XSS-Protection          "1; mode=block"
+  Header always set Referrer-Policy           "strict-origin-when-cross-origin"
+  Header always set Permissions-Policy        "geolocation=(), microphone=(), camera=()"
+
+  # CSP básica (ajusta si usas CDNs adicionales)
+  Header always set Content-Security-Policy \
+    "default-src 'self'; \
+     script-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net https://www.youtube.com; \
+     style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdn.jsdelivr.net; \
+     font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; \
+     img-src 'self' data: https:; \
+     frame-src https://www.youtube.com https://player.vimeo.com; \
+     connect-src 'self'; \
+     object-src 'none';"
+
+  # Cache-Control para activos estáticos
+  <FilesMatch "\.(css|js)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.(jpg|jpeg|png|gif|webp|svg|ico|woff2|woff)$">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </FilesMatch>
+  <FilesMatch "\.php$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+  </FilesMatch>
+</IfModule>
+
+# ── Compresión GZIP ─────────────────────────────────────────────
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript
+  AddOutputFilterByType DEFLATE application/json application/xml image/svg+xml
+  AddOutputFilterByType DEFLATE font/woff font/woff2 application/font-woff
+</IfModule>
+
+# ── Tipos MIME correctos ─────────────────────────────────────────
+<IfModule mod_mime.c>
+  AddType application/javascript        .js
+  AddType text/css                      .css
+  AddType image/webp                    .webp
+  AddType image/svg+xml                 .svg
+  AddType font/woff2                    .woff2
+  AddType font/woff                     .woff
+  AddType video/mp4                     .mp4
+  AddType video/webm                    .webm
+</IfModule>
+
+# ── Charset UTF-8 por defecto ────────────────────────────────────
+AddDefaultCharset UTF-8
+
+# ── Prevenir hotlinking de imágenes ─────────────────────────────
+# (Descomenta y actualiza tu dominio)
+# <IfModule mod_rewrite.c>
+#   RewriteCond %{HTTP_REFERER} !^$
+#   RewriteCond %{HTTP_REFERER} !^https://tudominio\.com [NC]
+#   RewriteRule \.(jpg|jpeg|png|gif|webp)$ - [F,NC]
+# </IfModule>
