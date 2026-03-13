@@ -240,59 +240,45 @@
       <!-- Carrusel de Tecnologías -->
       <div class="tech-carousel-section fade-in fade-delay-2" aria-label="Tecnologías que domino">
         <p class="carousel-label">Tecnologías que domino</p>
-<div class="logos" id="logos">
-          <div class="logos-slide">
-            <!-- <img src="images/soft/soft00.png" alt=""> -->
-            <img src="imagenes/soft/soft01.png" alt="">
-            <img src="imagenes/soft/soft02.png" alt="">
-            <!-- <img src="images/soft/soft03.png" alt="">
-            <img src="images/soft/soft04.png" alt=""> -->
-            <img src="imagenes/soft/soft05.png" alt="">
-            <img src="imagenes/soft/soft06.png" alt="">
-            <img src="imagenes/soft/soft07.png" alt="">
-            <img src="imagenes/soft/soft08.png" alt="">
-            <img src="imagenes/soft/soft09.png" alt="">
-            <img src="imagenes/soft/soft10.png" alt="">
-            <img src="imagenes/soft/soft11.png" alt="">
-            <img src="imagenes/soft/soft12.png" alt="">
-            <img src="imagenes/soft/soft13.png" alt="">
-            <img src="imagenes/soft/soft15.png" alt="">
-            <img src="imagenes/soft/soft16.png" alt="">
+        
+        <div class="carousel-track-wrapper" role="marquee" aria-label="Carrusel de tecnologías">
+          <div class="logos" id="logos">
+            
+            <div class="logos-slide">
+              <img src="imagenes/soft/soft01.png" alt="Tecnología 1">
+              <img src="imagenes/soft/soft02.png" alt="Tecnología 2">
+              <img src="imagenes/soft/soft05.png" alt="Tecnología 5">
+              <img src="imagenes/soft/soft06.png" alt="Tecnología 6">
+              <img src="imagenes/soft/soft07.png" alt="Tecnología 7">
+              <img src="imagenes/soft/soft08.png" alt="Tecnología 8">
+              <img src="imagenes/soft/soft09.png" alt="Tecnología 9">
+              <img src="imagenes/soft/soft10.png" alt="Tecnología 10">
+              <img src="imagenes/soft/soft11.png" alt="Tecnología 11">
+              <img src="imagenes/soft/soft12.png" alt="Tecnología 12">
+              <img src="imagenes/soft/soft13.png" alt="Tecnología 13">
+              <img src="imagenes/soft/soft15.png" alt="Tecnología 15">
+              <img src="imagenes/soft/soft16.png" alt="Tecnología 16">
+            </div>
+            
+            <div class="logos-slide">
+              <img src="imagenes/soft/soft01.png" alt="Tecnología 1">
+              <img src="imagenes/soft/soft02.png" alt="Tecnología 2">
+              <img src="imagenes/soft/soft05.png" alt="Tecnología 5">
+              <img src="imagenes/soft/soft06.png" alt="Tecnología 6">
+              <img src="imagenes/soft/soft07.png" alt="Tecnología 7">
+              <img src="imagenes/soft/soft08.png" alt="Tecnología 8">
+              <img src="imagenes/soft/soft09.png" alt="Tecnología 9">
+              <img src="imagenes/soft/soft10.png" alt="Tecnología 10">
+              <img src="imagenes/soft/soft11.png" alt="Tecnología 11">
+              <img src="imagenes/soft/soft12.png" alt="Tecnología 12">
+              <img src="imagenes/soft/soft13.png" alt="Tecnología 13">
+              <img src="imagenes/soft/soft15.png" alt="Tecnología 15">
+              <img src="imagenes/soft/soft16.png" alt="Tecnología 16">
+            </div>
+
           </div>
         </div>
-        <div class="carousel-track-wrapper" role="marquee" aria-label="Carrusel de tecnologías">
-          <div class="carousel-track" id="carousel-track">
-
-            <!-- Ítem duplicados para loop infinito -->
-            <?php
-            $tecnologias = [
-              ['nombre' => 'HTML5',       'icono' => 'ri-html5-fill',       'color' => '#E34F26'],
-              ['nombre' => 'CSS3',        'icono' => 'ri-css3-fill',        'color' => '#1572B6'],
-              ['nombre' => 'JavaScript',  'icono' => 'ri-javascript-fill',  'color' => '#F7DF1E'],
-              ['nombre' => 'PHP',         'icono' => 'ri-code-s-slash-line','color' => '#777BB4'],
-              ['nombre' => 'MySQL',       'icono' => 'ri-database-2-fill',  'color' => '#4479A1'],
-              ['nombre' => 'Bootstrap',   'icono' => 'ri-bootstrap-fill',   'color' => '#7952B3'],
-              ['nombre' => 'React',       'icono' => 'ri-reactjs-line',     'color' => '#61DAFB'],
-              ['nombre' => 'Git',         'icono' => 'ri-git-branch-fill',  'color' => '#F05032'],
-              ['nombre' => 'GitHub',      'icono' => 'ri-github-fill',      'color' => '#181717'],
-              ['nombre' => 'Linux',       'icono' => 'ri-terminal-box-fill','color' => '#FCC624'],
-            ];
-
-            // Duplicamos para el efecto infinito
-            $items = array_merge($tecnologias, $tecnologias);
-            foreach ($items as $tech) {
-              echo '<div class="carousel-item">';
-              echo '  <div class="tech-icon" style="--tech-color:' . $tech['color'] . '">';
-              echo '    <i class="' . $tech['icono'] . '" aria-hidden="true" style="color:' . $tech['color'] . '"></i>';
-              echo '  </div>';
-              echo '  <span class="tech-name">' . $tech['nombre'] . '</span>';
-              echo '</div>';
-            }
-            ?>
-
-          </div><!-- /.carousel-track -->
-        </div><!-- /.carousel-track-wrapper -->
-      </div><!-- /.tech-carousel-section -->
+      </div>
 
       
 
