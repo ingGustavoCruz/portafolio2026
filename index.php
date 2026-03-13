@@ -93,7 +93,7 @@
             </a>
           </li>
           <li>
-            <a href="assets/docs/CV_GustavoCruz.pdf" class="nav-link" id="btn-cv" target="_blank" rel="noopener noreferrer" download aria-label="Descargar Curriculum Vitae en PDF">
+            <a href="assets/docs/Gustavo_Cruz_Senior_FullStack_Developer.pdf" class="nav-link" id="btn-cv" target="_blank" rel="noopener noreferrer" download aria-label="Descargar Curriculum Vitae en PDF">
               <i class="ri-file-pdf-2-line" aria-hidden="true"></i>
               <span>Curriculum Vitae</span>
             </a>
@@ -139,7 +139,7 @@
           </a>
         </li>
         <li>
-          <a href="assets/docs/CV_GustavoCruz.pdf" class="mobile-nav-link" target="_blank" rel="noopener noreferrer" download>
+          <a href="assets/docs/Gustavo_Cruz_Senior_FullStack_Developer.pdf" class="mobile-nav-link" target="_blank" rel="noopener noreferrer" download>
             <i class="ri-file-pdf-2-line" aria-hidden="true"></i> Curriculum Vitae
           </a>
         </li>
@@ -279,23 +279,21 @@
           </div>
         </div>
       </div>
-
       
-
       <!-- Estadísticas rápidas -->
       <div class="stats-row container fade-in fade-delay-3" role="list" aria-label="Estadísticas profesionales">
         <div class="stat-item" role="listitem">
-          <span class="stat-number" aria-label="Más de 3 años de experiencia">3+</span>
+          <span class="stat-number" aria-label="Más de 10 años de experiencia">10+</span>
           <span class="stat-label">Años de experiencia</span>
         </div>
         <div class="stat-divider" aria-hidden="true"></div>
         <div class="stat-item" role="listitem">
-          <span class="stat-number" aria-label="Más de 8 proyectos completados">8+</span>
+          <span class="stat-number" aria-label="Más de 12 proyectos completados">12+</span>
           <span class="stat-label">Proyectos completados</span>
         </div>
         <div class="stat-divider" aria-hidden="true"></div>
         <div class="stat-item" role="listitem">
-          <span class="stat-number" aria-label="10 tecnologías dominadas">10+</span>
+          <span class="stat-number" aria-label="17 tecnologías dominadas">17</span>
           <span class="stat-label">Tecnologías</span>
         </div>
         <div class="stat-divider" aria-hidden="true"></div>
@@ -307,9 +305,8 @@
 
     </section><!-- /#inicio -->
 
-
     <!-- ───────────────────────────────────
-         SECCIÓN 2: PORTAFOLIO
+        SECCIÓN 2: PORTAFOLIO
     ─────────────────────────────────────── -->
     <section class="section section-portafolio hidden" id="portafolio" aria-labelledby="portafolio-title">
 
