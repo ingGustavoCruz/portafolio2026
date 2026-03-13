@@ -15,7 +15,7 @@
   <meta name="author" content="Ing. Gustavo Cruz" />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://www.tudominio.com/" />
-
+  
   <!-- Open Graph / Redes Sociales -->
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.tudominio.com/" />
@@ -47,8 +47,7 @@
   </script>
 
   <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
-
+  <link rel="icon" href="imagenes/monito01.png" type="image/x-icon">
   <!-- Google Fonts: Syne (display) + DM Sans (body) -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -64,18 +63,24 @@
 <body>
 
   <!-- ═══════════════════════════════════════
-       HEADER / NAVEGACIÓN
+        HEADER / NAVEGACIÓN
   ═══════════════════════════════════════ -->
   <header class="site-header" id="site-header" role="banner">
     <div class="header-inner container">
 
       <!-- Logo / Marca -->
-      <a href="#inicio" class="brand" aria-label="Ir al inicio" data-section="inicio">
+      <!-- <a href="#inicio" class="brand" aria-label="Ir al inicio" data-section="inicio">
         <span class="brand-icon" aria-hidden="true">&lt;/&gt;</span>
         <span class="brand-text">
           <strong>Ing. Gustavo Cruz</strong>
           <small>Desarrollador Web Full-Stack</small>
         </span>
+      </a> -->
+
+      <!-- Logo -->
+      <a class="navbar-brand" href="#home">
+        <img src="imagenes/logoNvo.png" alt="Ing. Gustavo Cruz" 
+          class="img-fluid" style="max-height: 50px; border-radius: 6px;">
       </a>
 
       <!-- Navegación principal (desktop) -->
@@ -160,75 +165,101 @@
   </header>
 
   <!-- ═══════════════════════════════════════
-       MAIN — CONTENIDO PRINCIPAL
+      MAIN — CONTENIDO PRINCIPAL
   ═══════════════════════════════════════ -->
   <main id="main-content" role="main">
 
     <!-- ───────────────────────────────────
-         SECCIÓN 1: INICIO
+        SECCIÓN 1: INICIO
     ─────────────────────────────────────── -->
     <section class="section section-inicio active" id="inicio" aria-labelledby="inicio-title">
 
       <!-- Hero -->
       <div class="hero container">
-        <div class="hero-content fade-in">
-          <p class="hero-eyebrow">¡Hola, soy</p>
-          <h1 class="hero-name" id="inicio-title">Ing. Gustavo Cruz</h1>
-          <p class="hero-role">
-            <span class="role-accent">Desarrollador Web</span>
-            <span class="role-separator" aria-hidden="true">&nbsp;/&nbsp;</span>
-            <span>Full-Stack</span>
-          </p>
-          <p class="hero-bio">
-            Más de <strong>3 años de experiencia</strong> diseñando y desarrollando aplicaciones web
-            eficientes, escalables y robustas. Ingeniero en Computación por la <strong>UNAM</strong>,
-            apasionado por el código limpio y la experiencia de usuario.
-          </p>
+  
+  <div class="hero-header fade-in">
+    <p class="hero-role"> 
+      <span class="role-accent">Senior Full-Stack Engineer</span>
+      <span class="role-separator" aria-hidden="true">&nbsp;|&nbsp;</span>
+      <span>Technical Lead</span>
+      <span class="role-separator" aria-hidden="true">&nbsp;|&nbsp;</span>
+      <span>Software Architecture</span>
+      <span class="role-separator" aria-hidden="true">&nbsp;|&nbsp;</span>
+      <span>AI-Augmented Development</span>
+    </p>
+  </div>
 
-          <!-- CTA Buttons -->
-          <div class="hero-cta" role="group" aria-label="Acciones principales">
-            <a href="#portafolio" class="btn btn-primary" data-section="portafolio">
-              <i class="ri-briefcase-4-line" aria-hidden="true"></i> Ver Proyectos
-            </a>
-            <a href="#contacto" class="btn btn-outline" data-section="contacto">
-              <i class="ri-mail-send-line" aria-hidden="true"></i> Contáctame
-            </a>
-          </div>
+  <div class="hero-body">
+    
+    <div class="hero-content fade-in fade-delay">
+      <p class="hero-bio">
+        <strong>Ingeniero Senior Full-Stack y Technical Lead con más de 10 años de experiencia </strong> diseñando, modernizando y escalando arquitecturas web y sistemas empresariales. Especializado en el ecosistema  <strong>PHP/Laravel y React y bases de datos relacionales, </strong> con un historial comprobado en la transformación de requerimientos de negocio en soluciones tecnológicas robustas.
+      </p>
+      <p class="hero-bio">   
+        Experto en liderar equipos de alto impacto y pionero en la adopción de metodologías de  <strong>AI-Augmented Development </strong> para acelerar el ciclo de vida del software (SDLC), asegurando la máxima calidad, escalabilidad y mantenibilidad del código.
+      </p>
 
-          <!-- Redes sociales -->
-          <div class="hero-social" aria-label="Redes sociales">
-            <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub de Gustavo Cruz">
-              <i class="ri-github-fill" aria-hidden="true"></i>
-            </a>
-            <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn de Gustavo Cruz">
-              <i class="ri-linkedin-box-fill" aria-hidden="true"></i>
-            </a>
-            <a href="mailto:ing.erickgustavocruz@gmail.com" class="social-link" aria-label="Enviar correo a Gustavo Cruz">
-              <i class="ri-mail-fill" aria-hidden="true"></i>
-            </a>
-          </div>
-        </div>
-
-        <!-- Foto de perfil -->
-        <div class="hero-image fade-in fade-delay">
-          <div class="hero-img-wrapper">
-            <div class="hero-img-glow" aria-hidden="true"></div>
-            <img
-              src="assets/img/perfil.jpg"
-              alt="Fotografía profesional de Ing. Gustavo Cruz, Desarrollador Web Full-Stack"
-              class="hero-photo"
-              width="420"
-              height="420"
-              loading="eager"
-            />
-          </div>
-        </div>
+      <div class="hero-cta" role="group" aria-label="Acciones principales">
+        <a href="#portafolio" class="btn btn-primary" data-section="portafolio">
+          <i class="ri-briefcase-4-line" aria-hidden="true"></i> Ver Proyectos
+        </a>
+        <a href="#contacto" class="btn btn-outline" data-section="contacto">
+          <i class="ri-mail-send-line" aria-hidden="true"></i> Contáctame
+        </a>
       </div>
+
+      <div class="hero-social" aria-label="Redes sociales">
+        <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub de Gustavo Cruz">
+          <i class="ri-github-fill" aria-hidden="true"></i>
+        </a>
+        <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="LinkedIn de Gustavo Cruz">
+          <i class="ri-linkedin-box-fill" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:ing.erickgustavocruz@gmail.com" class="social-link" aria-label="Enviar correo a Gustavo Cruz">
+          <i class="ri-mail-fill" aria-hidden="true"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-image fade-in fade-delay-2">
+      <div class="hero-img-wrapper">
+        <div class="hero-img-glow" aria-hidden="true"></div>
+        <img
+          src="assets/img/perfil.jpg"
+          alt="Fotografía profesional de Ing. Gustavo Cruz, Desarrollador Web Full-Stack"
+          class="hero-photo"
+          width="420"
+          height="420"
+          loading="eager"
+        />
+      </div>
+    </div>
+    
+  </div> </div>
 
       <!-- Carrusel de Tecnologías -->
       <div class="tech-carousel-section fade-in fade-delay-2" aria-label="Tecnologías que domino">
         <p class="carousel-label">Tecnologías que domino</p>
-
+<div class="logos" id="logos">
+          <div class="logos-slide">
+            <!-- <img src="images/soft/soft00.png" alt=""> -->
+            <img src="imagenes/soft/soft01.png" alt="">
+            <img src="imagenes/soft/soft02.png" alt="">
+            <!-- <img src="images/soft/soft03.png" alt="">
+            <img src="images/soft/soft04.png" alt=""> -->
+            <img src="imagenes/soft/soft05.png" alt="">
+            <img src="imagenes/soft/soft06.png" alt="">
+            <img src="imagenes/soft/soft07.png" alt="">
+            <img src="imagenes/soft/soft08.png" alt="">
+            <img src="imagenes/soft/soft09.png" alt="">
+            <img src="imagenes/soft/soft10.png" alt="">
+            <img src="imagenes/soft/soft11.png" alt="">
+            <img src="imagenes/soft/soft12.png" alt="">
+            <img src="imagenes/soft/soft13.png" alt="">
+            <img src="imagenes/soft/soft15.png" alt="">
+            <img src="imagenes/soft/soft16.png" alt="">
+          </div>
+        </div>
         <div class="carousel-track-wrapper" role="marquee" aria-label="Carrusel de tecnologías">
           <div class="carousel-track" id="carousel-track">
 
@@ -262,6 +293,8 @@
           </div><!-- /.carousel-track -->
         </div><!-- /.carousel-track-wrapper -->
       </div><!-- /.tech-carousel-section -->
+
+      
 
       <!-- Estadísticas rápidas -->
       <div class="stats-row container fade-in fade-delay-3" role="list" aria-label="Estadísticas profesionales">
@@ -606,7 +639,7 @@ HTML;
 
 
   <!-- ═══════════════════════════════════════
-       FOOTER
+      FOOTER
   ═══════════════════════════════════════ -->
   <footer class="site-footer" role="contentinfo">
     <div class="footer-inner container">
@@ -633,7 +666,7 @@ HTML;
 
 
   <!-- ═══════════════════════════════════════
-       MODAL: REPRODUCTOR DE VIDEO
+      MODAL: REPRODUCTOR DE VIDEO
   ═══════════════════════════════════════ -->
   <div class="modal-overlay hidden" id="video-modal" role="dialog" aria-modal="true" aria-label="Reproductor de video del proyecto" aria-hidden="true">
     <div class="modal-container">
@@ -656,7 +689,7 @@ HTML;
 
 
   <!-- ═══════════════════════════════════════
-       BOTÓN: SCROLL TO TOP
+      BOTÓN: SCROLL TO TOP
   ═══════════════════════════════════════ -->
   <button class="scroll-top hidden" id="scroll-top" aria-label="Volver al inicio de la página" title="Subir al inicio">
     <i class="ri-arrow-up-line" aria-hidden="true"></i>
