@@ -79,8 +79,8 @@
 
       <!-- Logo -->
       <a class="navbar-brand" href="#home">
-        <img src="imagenes/logoNvo.png" alt="Ing. Gustavo Cruz" 
-          class="img-fluid" style="max-height: 50px; border-radius: 6px;">
+        <img src="imagenes/logoNvo.png" alt="Ing. Gustavo Cruz" class="img-fluid logo-light" style="max-height: 50px; border-radius: 6px;">
+        <img src="imagenes/logoNvo_dark_mode.png" alt="Ing. Gustavo Cruz" class="logo-dark" style="max-height: 50px; border-radius: 6px;">
       </a>
 
       <!-- Navegación principal (desktop) -->
@@ -429,14 +429,23 @@
             ],
           ];
 
-          foreach ($proyectos as $p) {
+          foreach ($proyectos as $index => $p) {
             $filtrosStr = implode(' ', $p['filtros']);
             $stackHtml  = '';
             foreach ($p['stack'] as $tech) {
               $stackHtml .= '<span class="stack-tag">' . htmlspecialchars($tech) . '</span>';
             }
+            // 🚀 LA NUEVA MAGIA PARA ZIG-ZAG
+            $clasesEspeciales = '';
+            
+            if ($index === 0) {
+              $clasesEspeciales = 'project-featured featured-left'; // Imagen Izq
+            } elseif ($index === 1) {
+              $clasesEspeciales = 'project-featured featured-right'; // Imagen Der
+            }
+            // Fíjate que agregamos {$claseDestacado} en las clases del <article>
             echo <<<HTML
-            <article class="project-card fade-in" data-filter="{$filtrosStr}" data-video="{$p['video']}" data-tipo="{$p['tipo_video']}" data-title="{$p['titulo']}" role="listitem">
+            <article class="project-card fade-in {$clasesEspeciales}" data-filter="{$filtrosStr}" data-video="{$p['video']}" data-tipo="{$p['tipo_video']}" data-title="{$p['titulo']}" role="listitem">
               <div class="project-img-wrap">
                 <img
                   src="{$p['imagen']}"
