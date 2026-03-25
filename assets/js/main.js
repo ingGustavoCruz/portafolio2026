@@ -65,6 +65,9 @@ const Navigation = (() => {
     if (!SECTIONS.includes(id)) return;
     if (id === currentSection) return;
 
+    // Scroll suave PRIMERO, antes de cambiar el DOM
+    window.scrollTo({ top: 0, behavior: 'instant' }); // Usa instant para evitar el salto visible
+    
     // Ocultar sección activa
     const prev = $(`#${currentSection}`);
     if (prev) {
