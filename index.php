@@ -55,7 +55,8 @@
 
   <!-- Íconos: Remix Icon CDN -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
-
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
   <!-- CSS Principal -->
   <link rel="stylesheet" href="assets/css/styles.css" />
 </head>
@@ -336,7 +337,13 @@
               'titulo'      => 'Sistema de Gestión KA',
               'descripcion' => 'Plataforma web para gestión y seguimiento de procesos operativos. Incluye dashboards interactivos, reportes en tiempo real y gestión de usuarios con roles y permisos.',
               'imagen'      => 'assets/img/proyectos/proyecto1.jpg',
-              'stack'       => ['PHP', 'MySQL', 'JavaScript', 'Bootstrap'],
+              // 🚀 AQUÍ ESTÁ LA MAGIA: Cambiamos textos por arreglos asociativos
+              'stack'       => [
+                  ['nombre' => 'PHP', 'icono' => 'devicon-php-plain colored'],
+                  ['nombre' => 'MySQL', 'icono' => 'devicon-mysql-plain wordmark colored'],
+                  ['nombre' => 'JavaScript', 'icono' => 'devicon-javascript-plain colored'],
+                  ['nombre' => 'Bootstrap', 'icono' => 'devicon-bootstrap-plain colored']
+              ],
               'filtros'     => ['php', 'mysql', 'javascript'],
               'github'      => 'https://github.com/tuusuario/proyecto1',
               'demo'        => '#',
@@ -345,86 +352,128 @@
             ],
             [
               'id'          => 2,
-              'titulo'      => 'Portal de Reportes Dinámicos',
-              'descripcion' => 'Sistema de reportería avanzada con filtros dinámicos, exportación a PDF/Excel y visualización de métricas KPI para toma de decisiones empresariales.',
-              'imagen'      => 'assets/img/proyectos/proyecto2.jpg',
-              'stack'       => ['PHP', 'MySQL', 'Chart.js', 'Bootstrap'],
-              'filtros'     => ['php', 'mysql'],
-              'github'      => 'https://github.com/tuusuario/proyecto2',
+              'titulo'      => 'Sistema de Gestión KA',
+              'descripcion' => 'Plataforma web para gestión y seguimiento de procesos operativos. Incluye dashboards interactivos, reportes en tiempo real y gestión de usuarios con roles y permisos.',
+              'imagen'      => 'assets/img/proyectos/proyecto1.jpg',
+              // 🚀 AQUÍ ESTÁ LA MAGIA: Cambiamos textos por arreglos asociativos
+              'stack'       => [
+                  ['nombre' => 'PHP', 'icono' => 'devicon-php-plain colored'],
+                  ['nombre' => 'MySQL', 'icono' => 'devicon-mysql-plain wordmark colored'],
+                  ['nombre' => 'JavaScript', 'icono' => 'devicon-javascript-plain colored'],
+                  ['nombre' => 'Bootstrap', 'icono' => 'devicon-bootstrap-plain colored']
+              ],
+              'filtros'     => ['php', 'mysql', 'javascript'],
+              'github'      => 'https://github.com/tuusuario/proyecto1',
               'demo'        => '#',
-              'video'       => 'assets/videos/proyecto2.mp4',
-              'tipo_video'  => 'local',
+              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_1',
+              'tipo_video'  => 'youtube',
             ],
             [
               'id'          => 3,
-              'titulo'      => 'App de Inventario Web',
-              'descripcion' => 'Control de inventario en tiempo real con alertas de stock mínimo, historial de movimientos, código de barras y panel administrativo multi-usuario.',
-              'imagen'      => 'assets/img/proyectos/proyecto3.jpg',
-              'stack'       => ['PHP', 'MySQL', 'JavaScript', 'Bootstrap'],
+              'titulo'      => 'Sistema de Gestión KA',
+              'descripcion' => 'Plataforma web para gestión y seguimiento de procesos operativos. Incluye dashboards interactivos, reportes en tiempo real y gestión de usuarios con roles y permisos.',
+              'imagen'      => 'assets/img/proyectos/proyecto1.jpg',
+              // 🚀 AQUÍ ESTÁ LA MAGIA: Cambiamos textos por arreglos asociativos
+              'stack'       => [
+                  ['nombre' => 'PHP', 'icono' => 'devicon-php-plain colored'],
+                  ['nombre' => 'MySQL', 'icono' => 'devicon-mysql-plain wordmark colored'],
+                  ['nombre' => 'JavaScript', 'icono' => 'devicon-javascript-plain colored'],
+                  ['nombre' => 'Bootstrap', 'icono' => 'devicon-bootstrap-plain colored']
+              ],
               'filtros'     => ['php', 'mysql', 'javascript'],
-              'github'      => 'https://github.com/tuusuario/proyecto3',
+              'github'      => 'https://github.com/tuusuario/proyecto1',
               'demo'        => '#',
-              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_3',
+              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_1',
               'tipo_video'  => 'youtube',
             ],
             [
               'id'          => 4,
-              'titulo'      => 'Dashboard Analytics React',
-              'descripcion' => 'Dashboard interactivo construido con React para visualización de datos analíticos. Gráficas en tiempo real, filtros avanzados y diseño responsivo mobile-first.',
-              'imagen'      => 'assets/img/proyectos/proyecto4.jpg',
-              'stack'       => ['React', 'JavaScript', 'CSS3', 'REST API'],
-              'filtros'     => ['react', 'javascript'],
-              'github'      => 'https://github.com/tuusuario/proyecto4',
+              'titulo'      => 'Sistema de Gestión KA',
+              'descripcion' => 'Plataforma web para gestión y seguimiento de procesos operativos. Incluye dashboards interactivos, reportes en tiempo real y gestión de usuarios con roles y permisos.',
+              'imagen'      => 'assets/img/proyectos/proyecto1.jpg',
+              // 🚀 AQUÍ ESTÁ LA MAGIA: Cambiamos textos por arreglos asociativos
+              'stack'       => [
+                  ['nombre' => 'PHP', 'icono' => 'devicon-php-plain colored'],
+                  ['nombre' => 'MySQL', 'icono' => 'devicon-mysql-plain wordmark colored'],
+                  ['nombre' => 'JavaScript', 'icono' => 'devicon-javascript-plain colored'],
+                  ['nombre' => 'Bootstrap', 'icono' => 'devicon-bootstrap-plain colored']
+              ],
+              'filtros'     => ['php', 'mysql', 'javascript'],
+              'github'      => 'https://github.com/tuusuario/proyecto1',
               'demo'        => '#',
-              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_4',
+              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_1',
               'tipo_video'  => 'youtube',
             ],
             [
               'id'          => 5,
-              'titulo'      => 'Sistema de Tickets de Soporte',
-              'descripcion' => 'Plataforma completa de gestión de tickets de soporte técnico con asignación automática, seguimiento de SLA, notificaciones por correo y base de conocimiento.',
-              'imagen'      => 'assets/img/proyectos/proyecto5.jpg',
-              'stack'       => ['PHP', 'MySQL', 'JavaScript', 'PHPMailer'],
+              'titulo'      => 'Sistema de Gestión KA',
+              'descripcion' => 'Plataforma web para gestión y seguimiento de procesos operativos. Incluye dashboards interactivos, reportes en tiempo real y gestión de usuarios con roles y permisos.',
+              'imagen'      => 'assets/img/proyectos/proyecto1.jpg',
+              // 🚀 AQUÍ ESTÁ LA MAGIA: Cambiamos textos por arreglos asociativos
+              'stack'       => [
+                  ['nombre' => 'PHP', 'icono' => 'devicon-php-plain colored'],
+                  ['nombre' => 'MySQL', 'icono' => 'devicon-mysql-plain wordmark colored'],
+                  ['nombre' => 'JavaScript', 'icono' => 'devicon-javascript-plain colored'],
+                  ['nombre' => 'Bootstrap', 'icono' => 'devicon-bootstrap-plain colored']
+              ],
               'filtros'     => ['php', 'mysql', 'javascript'],
-              'github'      => 'https://github.com/tuusuario/proyecto5',
+              'github'      => 'https://github.com/tuusuario/proyecto1',
               'demo'        => '#',
-              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_5',
+              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_1',
               'tipo_video'  => 'youtube',
             ],
             [
               'id'          => 6,
-              'titulo'      => 'E-commerce con Carrito',
-              'descripcion' => 'Tienda en línea completa con catálogo de productos, carrito de compras, integración de pasarela de pagos, gestión de pedidos y panel de administración.',
-              'imagen'      => 'assets/img/proyectos/proyecto6.jpg',
-              'stack'       => ['PHP', 'MySQL', 'JavaScript', 'Bootstrap'],
+              'titulo'      => 'Sistema de Gestión KA',
+              'descripcion' => 'Plataforma web para gestión y seguimiento de procesos operativos. Incluye dashboards interactivos, reportes en tiempo real y gestión de usuarios con roles y permisos.',
+              'imagen'      => 'assets/img/proyectos/proyecto1.jpg',
+              // 🚀 AQUÍ ESTÁ LA MAGIA: Cambiamos textos por arreglos asociativos
+              'stack'       => [
+                  ['nombre' => 'PHP', 'icono' => 'devicon-php-plain colored'],
+                  ['nombre' => 'MySQL', 'icono' => 'devicon-mysql-plain wordmark colored'],
+                  ['nombre' => 'JavaScript', 'icono' => 'devicon-javascript-plain colored'],
+                  ['nombre' => 'Bootstrap', 'icono' => 'devicon-bootstrap-plain colored']
+              ],
               'filtros'     => ['php', 'mysql', 'javascript'],
-              'github'      => 'https://github.com/tuusuario/proyecto6',
+              'github'      => 'https://github.com/tuusuario/proyecto1',
               'demo'        => '#',
-              'video'       => 'assets/videos/proyecto6.mp4',
-              'tipo_video'  => 'local',
+              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_1',
+              'tipo_video'  => 'youtube',
             ],
             [
               'id'          => 7,
-              'titulo'      => 'API REST con Autenticación JWT',
-              'descripcion' => 'API RESTful robusta con autenticación JWT, control de acceso por roles, documentación Swagger, rate limiting y pruebas automatizadas con PHPUnit.',
-              'imagen'      => 'assets/img/proyectos/proyecto7.jpg',
-              'stack'       => ['PHP', 'MySQL', 'JWT', 'REST API'],
-              'filtros'     => ['php', 'mysql'],
-              'github'      => 'https://github.com/tuusuario/proyecto7',
+              'titulo'      => 'Sistema de Gestión KA',
+              'descripcion' => 'Plataforma web para gestión y seguimiento de procesos operativos. Incluye dashboards interactivos, reportes en tiempo real y gestión de usuarios con roles y permisos.',
+              'imagen'      => 'assets/img/proyectos/proyecto1.jpg',
+              // 🚀 AQUÍ ESTÁ LA MAGIA: Cambiamos textos por arreglos asociativos
+              'stack'       => [
+                  ['nombre' => 'PHP', 'icono' => 'devicon-php-plain colored'],
+                  ['nombre' => 'MySQL', 'icono' => 'devicon-mysql-plain wordmark colored'],
+                  ['nombre' => 'JavaScript', 'icono' => 'devicon-javascript-plain colored'],
+                  ['nombre' => 'Bootstrap', 'icono' => 'devicon-bootstrap-plain colored']
+              ],
+              'filtros'     => ['php', 'mysql', 'javascript'],
+              'github'      => 'https://github.com/tuusuario/proyecto1',
               'demo'        => '#',
-              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_7',
+              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_1',
               'tipo_video'  => 'youtube',
             ],
             [
               'id'          => 8,
-              'titulo'      => 'Landing Page Corporativa',
-              'descripcion' => 'Landing page de alto impacto para empresa corporativa con animaciones CSS avanzadas, formulario de contacto integrado y optimización SEO completa.',
-              'imagen'      => 'assets/img/proyectos/proyecto8.jpg',
-              'stack'       => ['HTML5', 'CSS3', 'JavaScript', 'PHP'],
-              'filtros'     => ['javascript', 'php'],
-              'github'      => 'https://github.com/tuusuario/proyecto8',
+              'titulo'      => 'Sistema de Gestión KA',
+              'descripcion' => 'Plataforma web para gestión y seguimiento de procesos operativos. Incluye dashboards interactivos, reportes en tiempo real y gestión de usuarios con roles y permisos.',
+              'imagen'      => 'assets/img/proyectos/proyecto1.jpg',
+              // 🚀 AQUÍ ESTÁ LA MAGIA: Cambiamos textos por arreglos asociativos
+              'stack'       => [
+                  ['nombre' => 'PHP', 'icono' => 'devicon-php-plain colored'],
+                  ['nombre' => 'MySQL', 'icono' => 'devicon-mysql-plain wordmark colored'],
+                  ['nombre' => 'JavaScript', 'icono' => 'devicon-javascript-plain colored'],
+                  ['nombre' => 'Bootstrap', 'icono' => 'devicon-bootstrap-plain colored']
+              ],
+              'filtros'     => ['php', 'mysql', 'javascript'],
+              'github'      => 'https://github.com/tuusuario/proyecto1',
               'demo'        => '#',
-              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_8',
+              'video'       => 'https://www.youtube.com/embed/TU_VIDEO_ID_1',
               'tipo_video'  => 'youtube',
             ],
           ];
@@ -432,10 +481,12 @@
           foreach ($proyectos as $index => $p) {
             $filtrosStr = implode(' ', $p['filtros']);
             $stackHtml  = '';
+            
+            // 🚀 NUEVO FOREACH: Renderiza los íconos de Devicon
             foreach ($p['stack'] as $tech) {
-              $stackHtml .= '<span class="stack-tag">' . htmlspecialchars($tech) . '</span>';
+              $stackHtml .= '<i class="' . $tech['icono'] . ' stack-icon" title="' . htmlspecialchars($tech['nombre']) . '" aria-label="' . htmlspecialchars($tech['nombre']) . '"></i>';
             }
-            // 🚀 LA NUEVA MAGIA PARA ZIG-ZAG
+
             $clasesEspeciales = '';
             
             if ($index === 0) {

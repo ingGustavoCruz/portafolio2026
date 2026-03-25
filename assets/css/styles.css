@@ -872,22 +872,30 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   overflow: hidden;
 }
 
-/* Stack tags */
+/* Stack tags - Alineación perfecta con Flexbox */
 .project-stack {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 14px; /* Un poco más de aire entre logos */
+  align-items: center; /* Centrado vertical impecable */
+  margin-top: 5px;
 }
-.stack-tag {
-  font-size: 0.7rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  padding: 3px 10px;
-  border-radius: var(--radius-full);
-  background: var(--accent-glow);
-  color: var(--accent);
-  border: 1px solid var(--accent);
+
+/* Nuevos íconos de tecnologías */
+.stack-icon {
+  font-size: 1.8rem; /* Tamaño ideal para lectura rápida */
+  transition: transform var(--transition-base), filter var(--transition-base);
+  cursor: help; /* Indica al usuario que puede poner el mouse encima (por el title) */
+}
+
+.stack-icon:hover {
+  transform: translateY(-3px) scale(1.1);
+  filter: drop-shadow(0 4px 8px var(--accent-glow));
+}
+
+/* Ajustes especiales para modo oscuro si algún logo no se ve bien */
+[data-theme="dark"] .stack-icon {
+  filter: drop-shadow(0 0 2px rgba(255,255,255,0.1));
 }
 
 /* Links de acción */
