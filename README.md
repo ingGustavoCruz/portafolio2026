@@ -194,8 +194,8 @@ $tecnologias = [
 
 **Ing. Gustavo Cruz**
 - 📧 ing.erickgustavocruz@gmail.com
-- 🐙 github.com/tuusuario
-- 💼 linkedin.com/in/tuusuario
+- 🐙 github.com/ingGustavoCruz
+- 💼 linkedin.com/in/ing-erick-gustavo-cruz-barrios-8730b752/
 
 ---
 
